@@ -16,6 +16,11 @@ Even 7-Zip is supported for both reading and writing.
 I could definitely use some help, if any is available. Completeness will 
 require a bit more work (see *libarchive*'s archive.h and archive_entry.h).
 
+Project page: https://github.com/dsoprea/PyEasyArchive
+
+The upsteam C library libarchive has a home page at
+http://www.libarchive.org/
+
 
 ------------
 Installation
@@ -24,6 +29,9 @@ Installation
 PyPI::
 
     $ sudo pip install libarchive
+
+Python 2.7 or newer is required.  You also need a recent enough
+*libarchive* (in particular, the "legacy" version 2 is not supported).
 
 
 -----
