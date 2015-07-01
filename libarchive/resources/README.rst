@@ -62,6 +62,8 @@ Done   Task
   X    Populate archive hosted in memory buffer
   _    Populate archive entries from memory buffers
   _    Fill-out the entry object's information/accessors
+  _    Read encrypted archives
+  _    Write encrypted archives
 =====  =================================================
 
 
