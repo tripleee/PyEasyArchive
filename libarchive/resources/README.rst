@@ -1,10 +1,14 @@
-**To eliminate some problems with installation, the public API has been moved from the `libarchive` package to `libarchive.public`, and will be reflected in the next release. This is backwards-incompatible, but would otherwise prevent the install due to broken dependencies during install.**
+**To eliminate some problems with installation, the public API has
+been moved from the ``libarchive`` package to ``libarchive.public``,
+and will be reflected in the next release. This is
+backwards-incompatible, but would otherwise prevent the install due to
+broken dependencies during install.**
 
 ------------
 Introduction
 ------------
 
-A ctypes-based adapter to libarchive. The source-code is written to be clear 
+A ctypes-based adapter to libarchive. The source code is written to be clear
 and intuitive.
 
 Even 7-Zip is supported for both reading and writing.
