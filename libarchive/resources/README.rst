@@ -33,18 +33,17 @@ PyPI::
 Python 2.7 or newer is required.  You also need a recent enough
 *libarchive* (in particular, the "legacy" version 2 is not supported).
 
+On Debian-based architectures, including Ubuntu etc, you need to
+install the *libarchive-dev* package in order to have a symlink from
+"libarchive.so" to libarchive.so.13 or whichever version you actually
+have installed.  However, this will pull in a large number of other
+development packages, which are unconditional dependencies for the
+libarchive-dev package.  If you want to avoid that, maybe just create
+the symlink manually::
 
------
-Notes
------
+    $ sudo ln -s /usr/lib/libarchive.so.?? /usr/local/lib/libarchive.so
 
-The Ubuntu *libarchive* package maintainer refuses to place a "libarchive.so" 
-symlink, so you'll have to place this yourself. Depending on your Ubuntu, this 
-can be libarchive.so.12, libarchive.so.13, or libarchive.so.14 .
-
-For example::
-
-    /usr/lib/x86_64-linux-gnu$ sudo ln -s libarchive.so.12 libarchive.so
+(assuming you have "/usr/local/lib" in your *ldconfig* path.)
 
 
 ---------
