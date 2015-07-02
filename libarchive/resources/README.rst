@@ -63,7 +63,7 @@ Done   Task
   _    Populate archive entries from memory buffers
   _    Fill-out the entry object's information/accessors
   _    Read encrypted archives
-  -    Write encrypted archives
+  _    Write encrypted archives
 =====  =================================================
 
 
